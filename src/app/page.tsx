@@ -57,7 +57,7 @@ export default function Home() {
       });
     }, observerOptions);
 
-    // Observa todos os elementos com a classe animated-on-scroll
+    
     const animatedElements = document.querySelectorAll('.animated-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
@@ -187,27 +187,27 @@ export default function Home() {
       </p>
     </div>
 
-    <div className="grid  lg:grid-cols-4 grid-cols-2   gap-3 justify-between animated-on-scroll delay-md sm:gap-4 ">
+    <div className="grid lg:grid-cols-4 grid-cols-2  sm:items-center md:items-center  gap-3 justify-between animated-on-scroll delay-md sm:gap-4 ">
 
-      <div className="py-2 lg:py-3 lg:px-3.5 px-2.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+      <div className="py-2 px-2.5 lg:py-3 lg:px-3.5  text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <BiTrophy className="mx-auto mb-2 text-2xl lg:text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">7</span>
         <span className="text-xs sm:text-sm md:text-xl">Victórias</span>
       </div>
 
-      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+      <div className=" py-2 px-2.5 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <FaBriefcase className="mx-auto mb-2 text-2xl lg:text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">50+</span>
         <span className="text-xs sm:text-sm  md:text-xl">Campeonatos</span>
       </div>
 
-      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+      <div className="py-2 px-2.5  lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <FaUsers className="mx-auto mb-2 text-2xl lg:text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">158</span>
         <span className="text-xs sm:text-sm md:text-xl"> Membros</span>
       </div>
 
-      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+      <div className="py-2 px-2.5 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <FaBuilding className="mx-auto mb-2 text-2xl lg:text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">9</span>
         <span className="text-xs sm:text-sm md:text-xl">Empresas</span>
@@ -261,25 +261,25 @@ export default function Home() {
 
         <div>
           <label className="text-xs font-semibold text-[#4b504b]">Empresa</label>
-          <input type="text" placeholder="Nome da empresa"
+          <input required type="text" placeholder="Nome da empresa"
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
           <label className="text-xs font-semibold text-[#4b504b]">Nome</label>
-          <input type="text" placeholder="Seu nome"
+          <input required type="text" placeholder="Seu nome"
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
           <label className="text-xs font-semibold text-[#4b504b]">E-mail corporativo</label>
-          <input type="email" placeholder="voce@empresa.com"
+          <input required type="email" placeholder="voce@empresa.com"
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
           <label className="text-xs font-semibold text-[#4b504b]">Resumo do evento</label>
-          <textarea rows={4} placeholder="Tipo de evento, público, período, local..."
+          <textarea required rows={4} placeholder="Tipo de evento, público, período, local..."
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40"></textarea>
         </div>
 
@@ -289,7 +289,8 @@ export default function Home() {
         type="submit"
         className="w-full mt-4 py-3 px-5 bg-yellow-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:bg-yellow-500 active:scale-[0.98]"
       >
-        Solicitar Contato
+        <a href="mailto:geral@mangais-resort.ao">Solicitar Contacto</a>
+        
       </button>
 
     </form>
