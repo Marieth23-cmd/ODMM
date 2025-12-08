@@ -177,7 +177,7 @@ export default function Home() {
   <div className="absolute inset-0 bg-black bg-opacity-60 z-0 min-h-[400px] sm:min-h-[300px]"></div>
 
   {/* CONTEÚDO */}
-  <div className="relative z-10 max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  md:grid-cols-1 gap-6">
+  <div className="relative z-10 max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1  md:grid-cols-1 gap-6">
 
     <div className="animated-on-scroll">
       <h2 className="m-0 mb-2 text-lg sm:text-xl md:text-2xl">Experiência construída em campo</h2>
@@ -187,30 +187,30 @@ export default function Home() {
       </p>
     </div>
 
-    <div className="flex flex-col sm:flex-row  flex-wrap gap-3 justify-between animated-on-scroll delay-md">
+    <div className="grid  lg:grid-cols-4 grid-cols-2   gap-3 justify-between animated-on-scroll delay-md sm:gap-4 ">
 
-      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-        <BiTrophy className="mx-auto mb-2 text-4xl"/>
-        <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">7</span>
-        <span className="text-xs sm:text-sm md:text-2xl">Victórias</span>
+      <div className="py-2 lg:py-3 lg:px-3.5 px-2.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+        <BiTrophy className="mx-auto mb-2 text-2xl lg:text-4xl"/>
+        <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">7</span>
+        <span className="text-xs sm:text-sm md:text-xl">Victórias</span>
       </div>
 
-      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-        <FaBriefcase className="mx-auto mb-2 text-4xl"/>
-        <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">50+</span>
-        <span className="text-xs sm:text-sm  md:text-2xl">Campeonatos</span>
+      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+        <FaBriefcase className="mx-auto mb-2 text-2xl lg:text-4xl"/>
+        <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">50+</span>
+        <span className="text-xs sm:text-sm  md:text-xl">Campeonatos</span>
       </div>
 
-      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-        <FaUsers className="mx-auto mb-2 text-4xl"/>
-        <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">158</span>
-        <span className="text-xs sm:text-sm md:text-2xl">Total de Membros</span>
+      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+        <FaUsers className="mx-auto mb-2 text-2xl lg:text-4xl"/>
+        <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">158</span>
+        <span className="text-xs sm:text-sm md:text-xl"> Membros</span>
       </div>
 
-      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-        <FaBuilding className="mx-auto mb-2 text-4xl"/>
-        <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">9</span>
-        <span className="text-xs sm:text-sm md:text-2xl">Empresas</span>
+      <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+        <FaBuilding className="mx-auto mb-2 text-2xl lg:text-4xl"/>
+        <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">9</span>
+        <span className="text-xs sm:text-sm md:text-xl">Empresas</span>
       </div>
 
     </div>
@@ -229,7 +229,7 @@ export default function Home() {
     {/* COLUNA ESQUERDA */}
     <div className="animated-on-scroll">
 
-      <h2 className="text-[1.9rem] font-semibold mb-3 text-[#1a1c18]">
+      <h2 className="text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.9rem]  font-semibold mb-3 text-[#1a1c18]">
        A sua empresa merece um campeonato à altura da sua marca.
       </h2>
 
