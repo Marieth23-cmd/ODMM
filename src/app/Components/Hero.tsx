@@ -8,7 +8,7 @@
   <div className="absolute inset-0 bg-gradient-to-b from-gray-900/90 to-gray-900/95 z-10"></div>
   
   <div className="relative z-10 flex-1 flex items-center">
-    <div className="max-w-[640px] mx-auto px-5 pb-9">
+    <div className="max-w-[640px] mx-auto px-5 pb-9 sm:px-6 md:px-8">
       {/* h1 com responsive: mobile = text-4xl, tablet = text-5xl, desktop ≥1024px = 2.6rem */}
       <h1 className="text-4xl md:text-5xl lg:text-[2.6rem] leading-tight m-0 mb-3 font-bold">
         Ordem de Mérito Mangais 2025 - O Evento de Golf Mais Prestigiado do País
@@ -28,7 +28,7 @@
         </a>
         <a 
           href="#about" 
-          className="text-sm text-yellow-600 no-underline hover:text-yellow-500"
+          className="text-sm text-yellow-600 no-underline hover:text-yellow-500  lg:mt-0 mt-2 block"
         >
           Ver formatos disponíveis
         </a>

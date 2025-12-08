@@ -30,7 +30,7 @@ export default function Header() {
               Sobre
             </a>
             <a href="#contact" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
-            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
+            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300 lg-hidden">
               Contacto
             </a>
             <a href="#eventos" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
@@ -42,7 +42,7 @@ export default function Header() {
            
         </div>
           </nav> 
-          <div className ="ml-auto flex gap-4"> 
+          <div className ="ml-auto gap-4 hidden  md:flex"> 
              <a href="#Tickets" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
               Ingressos
             </a>
