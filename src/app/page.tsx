@@ -192,25 +192,25 @@ export default function Home() {
       <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <BiTrophy className="mx-auto mb-2 text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">7</span>
-        <span className="text-xs sm:text-sm md:text-4xl">Victórias</span>
+        <span className="text-xs sm:text-sm md:text-2xl">Victórias</span>
       </div>
 
       <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <FaBriefcase className="mx-auto mb-2 text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">50+</span>
-        <span className="text-xs sm:text-sm  md:text-4xl">Campeonatos</span>
+        <span className="text-xs sm:text-sm  md:text-2xl">Campeonatos</span>
       </div>
 
       <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <FaUsers className="mx-auto mb-2 text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">158</span>
-        <span className="text-xs sm:text-sm md:text-4xl">Total de Membros</span>
+        <span className="text-xs sm:text-sm md:text-2xl">Total de Membros</span>
       </div>
 
       <div className="py-3 px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
         <FaBuilding className="mx-auto mb-2 text-4xl"/>
         <span className="block text-2xl  sm:text-3xl md:text-4xl font-semibold">9</span>
-        <span className="text-xs sm:text-sm md:text-4xl">Empresas</span>
+        <span className="text-xs sm:text-sm md:text-2xl">Empresas</span>
       </div>
 
     </div>
