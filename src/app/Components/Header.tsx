@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import LanguageSelect from "./LanguageSelect";
 
-
+import Image from "next/image";
 export default function Header() {
 
   const [isMenuOpen, setIsMenuOpen] =useState(false);  
@@ -44,7 +44,7 @@ useEffect(()=>{
         <header className=" fixed left-0 right-0 top-0 z-20 backdrop-blur-lg bg-gradient-to-b from-gray-900/95 via-gray-900/40 to-transparent border-b border-white/10">
         <div className="max-w-[1100px] mx-auto px-5 py-3 flex items-center gap-3 justify-between">
           <div className="text-lg font-semibold tracking-widest uppercase text-white">
-            <img src="/images/oddm.png" alt="Logo" width={70} height={60} className=""/>
+            <Image src="/images/oddm.png" alt="Logo" width={70} height={60} className=""/>
           </div>
           <nav className="hidden md:flex gap-5 text-sm ml-auto">
             <a href="#home" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1
@@ -78,7 +78,9 @@ useEffect(()=>{
         </div>   
    
    <div className="lg:hidden">
-            <FaBars className="text-white ml-auto mr-4 mb-2 cursor-pointer" onClick={()=>{ setIsMenuOpen(!isMenuOpen) ,setOpen(true)}}/>
+            <FaBars className="text-white ml-auto mr-4 mb-2 cursor-pointer"
+             onClick={()=>{ setIsMenuOpen(!isMenuOpen) ;
+              setOpen(true)}}/>
             </div>
        </div>
 
