@@ -1,0 +1,106 @@
+{
+    "Hero":{
+        "title":"Ordem de Mérito Mangais 2025 - O Evento de Golf Mais Prestigiado do País",
+        "subtitle":"Acompanhe todos os detalhes, classificações e destaques desta emocionante estapa realizada a 28 de Setembro de 2025",
+        "buttons":{
+            "planNext":"Planejar Próximo Torneio",
+            "seeFormats":"Ver formatos disponíveis"
+        }
+
+    }
+}
+
+
+
+{
+    "Etapas":{
+        "h2":" Etapas do Ordem de Mérito Mangais 2025",
+        "descripition":"  Acompanhe cada etapa do nosso processo do início ao fim. Cada círculo representa 
+                    uma etapa importante, permitindo visualizar rapidamente o processo de forma clara e organizada."
+
+    }
+}
+
+{
+    "Footer":{
+        "title":"2025 Golf Corporate. Todos os direitos reservados." ,
+        "subtitle":"Eventos de golf corporativos·ODMM",
+
+    }
+}
+
+{
+    "Header":{
+        "Inicio":"Inicio",
+        "Sobre":"Sobre",
+        "Contacto":"Contacto",
+        "Etapas":"Etapas" ,
+        "Ingressos":"Ingressos",
+        "Entrar":"Entrar"
+
+
+
+
+    }
+}
+
+{
+    "Experiencia":{
+        "title":"Experiência construída em campo" ,
+        "subtitle":"Somamos anos de atuação em eventos corporativos de alto padrão,com foco em consistência e previsibilidade para cada cliente.",
+        "Victorias":"Victorias",
+        "Membros":"Membros",
+        "Campeonatos":"Campeonatos",
+        "Empresas":"Empresas",
+
+
+
+    }
+}
+
+{
+    "Formatos":{
+        "title1":"Formatos pensados para diferentes objetivos" ,
+        "subtitle1":"Escolha o modelo de torneio ideal para o momento da sua empresa e
+        do seu relacionamento com o mercado.",
+        "title2":"Torneios para Clientes",
+        "subtitle2":" Eventos exclusivos para convidar clientes estratégicos, reforçar
+          parcerias e lançar soluções em um ambiente diferenciado.",
+         "title3":"Torneios Internos",
+        "subtitle3":"  Focados em equipes e líderes, fortalecendo cultura, engajamento
+          e reconhecimento interno.",
+         "title4":"Eventos C-level & VIP",
+        "subtitle4":"Experiências sob medida para alta liderança, com roteiros
+          personalizados e máxima discrição.",
+       
+
+
+    }
+}
+
+{
+    "Campeonatos":{
+        "title1":"Campeonatos de golf sob medida para ODMM" ,
+        "subtitles":{
+            "subtitle1":" Atuamos exclusivamente com eventos corporativos, conectando marcas
+        a clientes, parceiros e executivos em experiências de alto impacto
+        e baixo atrito.",
+            "subtitle2":"  Do planejamento ao pós-evento, nossa equipe cuida de tudo para
+        que sua empresa foque no que importa: relacionamento e negócios.",
+        },
+        "title2":"Networking qualificado",
+        "subtitle2":"Reúna decisores em um ambiente propício para conversas
+          estratégicas e acordos relevantes.",
+         "title3":"Experiência premium<",
+        "subtitle3":"  Campo, catering, brindes e staff alinhados ao padrão da sua
+          marca..",
+         "title4":"Organização completa",
+        "subtitle4":"Do convite ao relatório final, entregamos um fluxo profissional,
+          claro e previsível.",
+       
+
+
+    }
+}
+
+

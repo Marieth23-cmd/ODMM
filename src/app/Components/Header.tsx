@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 
@@ -7,6 +8,8 @@ import LanguageSelect from "./LanguageSelect";
 
 import Image from "next/image";
 export default function Header() {
+
+   const h= useTranslations("Header")
 
   const [isMenuOpen, setIsMenuOpen] =useState(false);  
   const [open , setOpen]= useState (false);
@@ -49,19 +52,19 @@ useEffect(()=>{
           <nav className="hidden md:flex gap-5 text-sm ml-auto">
             <a href="#home" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1
              after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300" onClick={scrollTopTop}>
-              Início
+              {h("Inicio")}
             </a>
             <a href="#about" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Sobre
+              {h("Sobre")}
             </a>
             <a href="#contact" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300 lg-hidden">
-              Contacto
+              {h("Contacto")}
             </a>
             <a href="#eventos" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Etapas
+              {h("Etapas")}
             </a>
             <div>
               <LanguageSelect/>
@@ -70,10 +73,10 @@ useEffect(()=>{
           </nav> 
           <div className ="ml-auto gap-4 hidden  md:flex"> 
              <a href="#Tickets" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Ingressos
+              {h("Ingressos")}
             </a>
             <a href="#Entrar" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Entrar
+             {h("Entar")}
             </a>
         </div>   
    
@@ -89,29 +92,29 @@ useEffect(()=>{
             <ul className=" flex flex-col gap-5 text-sm ml-auto">
                <a href="#home" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1
              after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300" onClick={scrollTopTop}>
-              Início
+             {h("Inicio")}
             </a>
             <a href="#about" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Sobre
+              {h("Sobre")}
             </a>
             <a href="#contact" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300 lg-hidden">
-              Contacto
+              {h("Contacto")}
             </a>
             <a href="#eventos" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Etapas
+              {h("Etapas")}
             </a>
             
-              <LanguageSelect/>
+            
                <a href="#Tickets" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Ingressos
+              {h("Ingressos")}
             </a>
             <a href="#Entrar" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-              Entrar
+             {h("Entrar")} 
             </a>
-           
+             <LanguageSelect/>
         
             </ul>
           </div>)}

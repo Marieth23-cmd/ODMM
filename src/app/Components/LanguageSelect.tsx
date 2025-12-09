@@ -1,8 +1,15 @@
 'use client'
 
 import { useState } from "react";
+import { useRouter, usePathname } from 'next/navigation';
+
+
+
 
 export default function LanguageSelect() {
+
+  const router=useRouter();
+  const pathname=usePathname()
   const [lang, setLang] = useState("pt");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,9 +22,12 @@ export default function LanguageSelect() {
 
   const selected = languages.find((l) => l.code === lang);
 
+  const currentlocale=pathname.split("/")[1]
+
+
   return (
     <div className="relative inline-block text-left">
-      {/* Botão que mostra a bandeira selecionada */}
+     
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 bg-gray-800 text-white px-3 py-2 rounded-md hover:bg-gray-700 transition-colors"
@@ -29,7 +39,7 @@ export default function LanguageSelect() {
         />
       </button>
 
-      {/* Menu dropdown - só aparece quando isOpen é true */}
+     
       {isOpen && (
         <div className="absolute mt-2 w-16 bg-gray-500 rounded-md shadow-lg z-10">
           {languages.map((l) => (
@@ -37,7 +47,11 @@ export default function LanguageSelect() {
               key={l.code}
               onClick={() => {
                 setLang(l.code);
-                setIsOpen(false); // Fecha o menu após selecionar
+                setIsOpen(false); 
+                const parts=pathname.split("/")
+                parts[1]=l.code
+                const newPath =parts.join("/")
+                router.replace(newPath)
               }}
               className={`flex items-center justify-center w-full px-3 py-2 hover:bg-gray-700 rounded-md transition-colors ${
                 l.code === lang ? 'bg-gray-700' : ''
