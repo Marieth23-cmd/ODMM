@@ -1,15 +1,16 @@
-import {notFound} from "next/navigation";
-import {getRequestConfig} from "next-intl/server";
-import { languages } from "../Constants/languages";
+import { notFound } from "next/navigation";
+import { getRequestConfig } from "next-intl/server";
+import { languages } from "@/Constants/languages";
 
-const locales = languages;
+ const locales= languages
 
 export default getRequestConfig(async ({ locale }) => {
-  
-  if (!locales?.includes(locale as any)) notFound();
+  const lng= locale?? "pt"
+
+  if (!locales.includes(lng)) notFound();
 
   return {
-    locale,
-    messages: (await import(`../messages/${locale}.json`)).default
+    locale:lng,
+    messages: (await import(`./messages/${locale}.json`)).default
   };
 });
