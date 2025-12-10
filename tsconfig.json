@@ -17,10 +17,15 @@
         "name": "next"
       }
     ],
+
+    // 🔥 CONFIGURAÇÃO ESSENCIAL DO ALIAS @
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"]
     }
+    // 🔥 ESSA VERSÃO FUNCIONA TANTO NO DEV COMO NO BUILD
   },
+
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
