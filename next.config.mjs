@@ -1,4 +1,5 @@
 import createNextIntlPlugin from 'next-intl/plugin';
+import path from 'path';
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -10,18 +11,27 @@ const nextConfig = {
       'cdn.pixabay.com',
       'i.imgur.com',
       'raw.githubusercontent.com',
-       'flagcdn.com',
+      'flagcdn.com',
     ],
   },
 
   async redirects() {
     return [
       {
-        source: '/',           // raiz do site
-        destination: '/pt',    // redireciona para idioma padrão
+        source: '/',
+        destination: '/pt',
         permanent: true,
       },
     ];
+  },
+
+  // 🔹 Configuração do alias @ para Webpack
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, 'src'),
+    };
+    return config;
   },
 };
 

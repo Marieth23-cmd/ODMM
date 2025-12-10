@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "ignoreDeprecations": "6.0",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -12,20 +17,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-
-    // 🔥 CONFIGURAÇÃO ESSENCIAL DO ALIAS @
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"]
-    }
-    // 🔥 ESSA VERSÃO FUNCIONA TANTO NO DEV COMO NO BUILD
+    "plugins": [{ "name": "next" }]
   },
-
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
