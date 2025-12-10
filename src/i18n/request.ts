@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+{/*import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
 import { languages } from "../constants/languages";
 
@@ -14,4 +14,4 @@ export default getRequestConfig(async ({ locale }) => {
     messages: (await import(`../../messages/${lng}.json`)).default
   };
 });
-//src/i18n/request.tsx
+//src/i18n/request.tsx*/}
