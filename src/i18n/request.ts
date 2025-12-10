@@ -1,17 +1,16 @@
-{/*import { notFound } from "next/navigation";
+// request.tsx na raiz ou em src/i18n
+import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
-import { languages } from "../constants/languages";
 
- const locales= languages
+const languages = ["en", "pt", "fr"]; // direto aqui
 
 export default getRequestConfig(async ({ locale }) => {
-  const lng= locale?? "pt"
+  const lng = locale ?? "pt";
 
-  if (!locales.includes(lng)) notFound();
+  if (!languages.includes(lng)) notFound();
 
   return {
-    locale:lng,
-    messages: (await import(`../../messages/${lng}.json`)).default
+    locale: lng,
+    messages: (await import(`../../messages/${lng}.json`)).default,
   };
 });
-//src/i18n/request.tsx*/}
