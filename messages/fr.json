@@ -1,0 +1,78 @@
+{
+  "Hero": {
+    "title": "Ordre du Mérite Mangais 2025 - L'événement de Golf le Plus Prestigieux du Pays",
+    "subtitle": "Suivez tous les détails, classements et moments forts de cette étape passionnante qui s'est déroulée le 28 septembre 2025",
+    "buttons": {
+      "planNext": "Planifier le Prochain Tournoi",
+      "seeFormats": "Voir les formats disponibles"
+    }
+  },
+  "Etapas": {
+    "h2": "Étapes de l'Ordre du Mérite Mangais 2025",
+    "description": "Suivez chaque étape de notre processus du début à la fin. Chaque cercle représente une étape importante, vous permettant de visualiser rapidement le processus de manière claire et organisée."
+  },
+  "Footer": {
+    "title": "2025 Golf Corporate. Tous droits réservés.",
+    "subtitle": "Événements de golf d'entreprise·ODMM"
+  },
+  "Header": {
+    "Inicio": "Accueil",
+    "Sobre": "À propos",
+    "Contacto": "Contact",
+    "Etapas": "Étapes",
+    "Ingressos": "Billets",
+    "Entrar": "Connexion"
+  },
+  "Experiencia": {
+    "title": "Expérience construite sur le terrain",
+    "subtitle": "Nous avons des années d'expérience dans les événements d'entreprise de haut niveau, en nous concentrant sur la cohérence et la prévisibilité pour chaque client.",
+    "Victorias": "Victoires",
+    "Membros": "Membres",
+    "Campeonatos": "Championnats",
+    "Empresas": "Entreprises"
+  },
+  "Formatos": {
+    "title1": "Formats conçus pour différents objectifs",
+    "subtitle1": "Choisissez le modèle de tournoi idéal pour le moment de votre entreprise et votre relation avec le marché.",
+    "title2": "Tournois pour Clients",
+    "subtitle2": "Événements exclusifs pour inviter des clients stratégiques, renforcer les partenariats et lancer des solutions dans un environnement différencié.",
+    "title3": "Tournois Internes",
+    "subtitle3": "Axés sur les équipes et les dirigeants, renforçant la culture, l'engagement et la reconnaissance interne.",
+    "title4": "Événements C-level & VIP",
+    "subtitle4": "Expériences sur mesure pour les cadres supérieurs, avec des itinéraires personnalisés et une discrétion maximale."
+  },
+  "Campeonatos": {
+    "title1": "Championnats de golf sur mesure pour l'ODMM",
+    "subtitles": {
+      "subtitle1": "Nous travaillons exclusivement avec des événements d'entreprise, connectant les marques aux clients, partenaires et dirigeants dans des expériences à fort impact et à faible friction.",
+      "subtitle2": "De la planification au post-événement, notre équipe s'occupe de tout pour que votre entreprise puisse se concentrer sur ce qui compte : les relations et les affaires."
+    },
+    "title2": "Réseautage qualifié",
+    "subtitle2": "Rassemblez les décideurs dans un environnement propice aux conversations stratégiques et aux accords pertinents.",
+    "title3": "Expérience premium",
+    "subtitle3": "Parcours, restauration, cadeaux et personnel alignés sur les normes de votre marque.",
+    "title4": "Organisation complète",
+    "subtitle4": "De l'invitation au rapport final, nous offrons un flux professionnel, clair et prévisible."
+  },
+  "Contacto": {
+    "title": "Votre entreprise mérite un championnat à la hauteur de votre marque.",
+    "subtitle": "Dites-nous ce que vous souhaitez organiser et recevez une proposition exclusive, conçue pour valoriser votre entreprise et offrir une expérience sportive à fort impact.",
+    "Divs": {
+      "title": "Contact",
+      "li1": "E-mail:",
+      "li2": "Téléphone:",
+      "subli": {
+        "localizacao": "Emplacement",
+        "descricao": "Barra do Kwanza, Luanda - Angola"
+      }
+    },
+    "Form": {
+      "title": "Envoyer une Demande",
+      "label1": "Nom",
+      "label2": "E-mail professionnel",
+      "label3": "Résumé de l'événement",
+      "label4": "Entreprise"
+    },
+    "Button": "Demander un Contact"
+  }
+}

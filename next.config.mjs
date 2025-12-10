@@ -10,6 +10,7 @@ const nextConfig = {
       'cdn.pixabay.com',
       'i.imgur.com',
       'raw.githubusercontent.com',
+       'flagcdn.com',
     ],
   },
 

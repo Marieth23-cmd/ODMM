@@ -38,7 +38,7 @@ export default function Experiencia(){
               <div className="py-2 px-2.5 lg:py-3 lg:px-3.5  text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
                 <BiTrophy className="mx-auto mb-2 text-2xl lg:text-4xl"/>
                 <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">7</span>
-                <span className="text-xs sm:text-sm md:text-xl"> {E("Victórias")}</span>
+                <span className="text-xs sm:text-sm md:text-xl"> {E("Victorias")}</span>
               </div>
         
               <div className=" py-2 px-2.5 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">

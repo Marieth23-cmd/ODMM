@@ -1,7 +1,9 @@
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-
+import Image from 'next/image';
 export default function Etapas() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const E = useTranslations("Etapas")
     
     const logos = [
         { src: "/images/Caetano1.png", alt: "Caetano" },
@@ -39,11 +41,10 @@ export default function Etapas() {
         >
             <div className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
-                    Etapas do Ordem de Mérito Mangais 2025
+                    {E("h2")}
                 </h2>
                 <p className=" text-sm  sm:text-base text-center mb-6">
-                    Acompanhe cada etapa do nosso processo do início ao fim. Cada círculo representa 
-                    uma etapa importante, permitindo visualizar rapidamente o processo de forma clara e organizada.
+                     {E("description")}
                 </p>
                 
                 <div className="grid grid-cols-3 smd:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 md:gap-8 gap-4 sm:gap-6 overflow-hidden">
@@ -56,7 +57,7 @@ export default function Etapas() {
                                 opacity: 1
                             }}
                         >
-                            <img
+                            <Image
                                 src={logo.src}
                                 alt={logo.alt}
                                 loading="lazy"

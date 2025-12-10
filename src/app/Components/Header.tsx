@@ -72,11 +72,11 @@ useEffect(()=>{
         </div>
           </nav> 
           <div className ="ml-auto gap-4 hidden  md:flex"> 
-             <a href="#Tickets" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
+             <a href="#tickets" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
               {h("Ingressos")}
             </a>
-            <a href="#Entrar" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-             {h("Entar")}
+            <a href="#entrar" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
+             {h("Entrar")}
             </a>
         </div>   
    
@@ -108,11 +108,11 @@ useEffect(()=>{
             </a>
             
             
-               <a href="#Tickets" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
+               <a href="#tickets" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
               {h("Ingressos")}
             </a>
-            <a href="#Entrar" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
-             {h("Entrar")} 
+           <a href="#entrar" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
+              {h("Entrar")}
             </a>
              <LanguageSelect/>
         

@@ -1,4 +1,4 @@
- import { languages } from "@/Constants/languages";
+ import { languages } from "@/constants/languages";
 import createMiddleware from "next-intl/middleware";
 
  export default createMiddleware({
@@ -9,4 +9,5 @@ import createMiddleware from "next-intl/middleware";
 
  export const config ={
     matcher:['/' , '/(pt|en|fr)/:path*']
- }
+ }  
+ //middleware.tsx na raiz do projecto 

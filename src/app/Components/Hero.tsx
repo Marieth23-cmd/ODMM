@@ -27,15 +27,15 @@ import { useTranslations } from "next-intl";
       <div className="flex gap-3 items-center flex-wrap">
         <a 
           href="#contact" 
-          className="inline-flex items-center justify-center px-5 py-2.5 rounded-full border-none text-sm font-semibold bg-yellow-600 text-gray-900 cursor-pointer no-underline shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-2xl hover:bg-yellow-500"
+          className="inline-flex items-center justify-center px-5 py-2.5 rounded-full border-none text-sm font-semibold bg-yellow-600 text-gray-900 cursor-pointer no-underline shadow-xl transition-all duration-200 hover:-transition-transform hover:shadow-2xl hover:bg-yellow-500"
         >
          {t("buttons.planNext")}
         </a>
         <a 
           href="#about" 
-          className="text-sm text-yellow-600 no-underline hover:text-yellow-500  rounded-full  lg:mt-0 mt-2 block border-solid border-[1px] border-yellow-600"
+          className="text-sm text-yellow-600 no-underline px-5 py-2.5  hover:text-yellow-500  rounded-full  lg:mt-0 mt-2 block border-solid border-[1px] border-yellow-600"
         >
-         {t("buttons.seeFormat")}
+         {t("buttons.seeFormats")}
         </a>
       </div>
     </div>

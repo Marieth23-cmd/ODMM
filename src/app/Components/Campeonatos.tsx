@@ -10,10 +10,10 @@ export default function Campeonatos(){
     <div className="animated-on-scroll">
       <h2 className="text-2xl font-bold mb-4">{C("title1")}</h2>
       <p className="mt-0 mb-3.5 text-[0.93rem] text-gray-300">
-       {C("subtitles.title1")}
+       {C("subtitles.subtitle1")}
       </p>
       <p className="mt-0 mb-3.5 text-[0.93rem] text-gray-300">
-         {C("subtitles.title2")}
+         {C("subtitles.subtitle2")}
       </p>
     </div>
     <div className="grid gap-3.5 animated-on-scroll delay-md">

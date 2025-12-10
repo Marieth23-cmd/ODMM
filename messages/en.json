@@ -1,0 +1,83 @@
+{
+
+"Hero": {
+    "title": "Mangais Merit Order 2025 - The Most Prestigious Golf Event in the Country",
+    "subtitle": "Follow all details, rankings, and highlights of this exciting stage held on September 28, 2025",
+    "buttons": {
+      "planNext": "Plan Next Tournament",
+      "seeFormats": "See Available Formats"
+    }
+  },
+
+"Etapas": {
+    "h2": "Stages of the Mangais Merit Order 2025",
+    "description": "Follow each stage of our process from start to finish. Each circle represents an important step, allowing you to quickly visualize the process clearly and organized."
+  },
+
+   "Footer": {
+    "title": "2025 Golf Corporate. All rights reserved.",
+    "subtitle": "Corporate golf events · ODMM"
+  },
+     "Header": {
+    "Inicio": "Home",
+    "Sobre": "About",
+    "Contacto": "Contact",
+    "Etapas": "Stages",
+    "Ingressos": "Tickets",
+    "Entrar": "Login"
+  },
+
+  "Experiencia": {
+    "title": "Experience Built on the Field",
+    "subtitle": "We have years of experience in high-standard corporate events, focusing on consistency and predictability for each client.",
+    "Victorias": "Victories",
+    "Membros": "Members",
+    "Campeonatos": "Tournaments",
+    "Empresas": "Companies"
+  },
+  "Formatos": {
+    "title1": "Formats Designed for Different Goals",
+    "subtitle1": "Choose the ideal tournament model for your company's moment and your market relationship.",
+    "title2": "Customer Tournaments",
+    "subtitle2": "Exclusive events to invite strategic clients, strengthen partnerships, and launch solutions in a differentiated environment.",
+    "title3": "Internal Tournaments",
+    "subtitle3": "Focused on teams and leaders, strengthening culture, engagement, and internal recognition.",
+    "title4": "C-level & VIP Events",
+    "subtitle4": "Tailored experiences for top leadership, with personalized schedules and maximum discretion."
+  },
+  "Campeonatos": {
+    "title1": "Golf Tournaments Tailored for ODMM",
+    "subtitles": {
+      "subtitle1": "We work exclusively with corporate events, connecting brands to clients, partners, and executives in high-impact, low-friction experiences.",
+      "subtitle2": "From planning to post-event, our team takes care of everything so your company can focus on what matters: relationships and business."
+    },
+     "title2": "Qualified Networking",
+    "subtitle2": "Gather decision-makers in an environment conducive to strategic conversations and relevant agreements.",
+    "title3": "Premium Experience",
+    "subtitle3": "Course, catering, gifts, and staff aligned with your brand's standard.",
+    "title4": "Complete Organization",
+    "subtitle4": "From invitation to final report, we deliver a professional, clear, and predictable workflow."
+  },
+  "Contacto": {
+    "title": "Your company deserves a championship worthy of its brand.",
+    "subtitle": "Tell us what you plan to organize and receive an exclusive proposal, designed to enhance your company and provide a high-impact sports experience.",
+    "Divs": {
+      "title": "Contact",
+      "li1": "E-mail:",
+      "li2": "Phone:",
+      "subli": {
+        "localizacao": "Location",
+        "descricao": "Barra do Kwanza, Luanda - Angola"
+      }
+    },
+     "Form": {
+      "title": "Send Request",
+      "label1": "Name",
+      "label2": "Corporate E-mail",
+      "label3": "Event Summary",
+      "label4": "Company"
+    },
+    "Button": "Request Contact"
+  }
+}
+

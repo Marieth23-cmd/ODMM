@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
-import { languages } from "@/Constants/languages";
+import { languages } from "@/constants/languages";
 
  const locales= languages
 
@@ -11,6 +11,7 @@ export default getRequestConfig(async ({ locale }) => {
 
   return {
     locale:lng,
-    messages: (await import(`./messages/${locale}.json`)).default
+    messages: (await import(`../../messages/${lng}.json`)).default
   };
 });
+//i18n/request.tsx

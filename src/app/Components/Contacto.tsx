@@ -26,7 +26,7 @@ export default function Contacto(){
         <ul className="text-gray-700 text-[0.95rem]">
           <li className="mb-2"><strong> {c("Divs.li1")}</strong> geral@mangais-resort.ao</li>
           <li className="mb-2"><strong> {c("Divs.li2")}</strong> 244 926 073 970</li>
-          <li><strong> {c("subli.localizacao")}</strong>{c("subli.descricao")}</li>
+          <li><strong> {c("Divs.subli.localizacao")}</strong>{c("Divs.subli.descricao")}</li>
         </ul>
       </div>
 
@@ -69,7 +69,7 @@ export default function Contacto(){
 
       <button
     type="submit"
-    className="w-full mt-4 py-3 px-5 bg-yellow-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:bg-yellow-500 active:scale-[0.98]"
+    className="w-full mt-4 py-3 px-5 bg-yellow-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:bg-yellow-700 active:scale-[0.98]"
   >
     {c("Button")}
   </button>
