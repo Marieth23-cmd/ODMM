@@ -71,8 +71,7 @@ useEffect(()=>{
            
         </div>
           </nav> 
-            
-   
+       
    <div className="lg:hidden">
             <FaBars className="text-white ml-auto mr-4 mb-2 cursor-pointer"
              onClick={()=>{ setIsMenuOpen(!isMenuOpen) ;
@@ -101,7 +100,6 @@ useEffect(()=>{
             </a>
             
             
-             
              <LanguageSelect/>
         
             </ul>
