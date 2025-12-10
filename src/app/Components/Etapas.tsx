@@ -58,10 +58,12 @@ export default function Etapas() {
                             }}
                         >
                             <Image
+                                 width={60}
+                                 height={60}
                                 src={logo.src}
                                 alt={logo.alt}
                                 loading="lazy"
-                                className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px]
+                                className=" sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px]
                                  bg-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
                             />
                         </div>

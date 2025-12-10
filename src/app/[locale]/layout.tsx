@@ -9,6 +9,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -20,11 +21,15 @@ type Props = {
   params: { locale: string };
 };
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default async function LocaleLayout({ 
+  children, 
+  params 
+}: Props) {
   const messages = await getMessages();
+  const { locale } = await params; // ✅ Await params (Next.js 15+)
 
   return (
-    <html lang={params.locale}>
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}
