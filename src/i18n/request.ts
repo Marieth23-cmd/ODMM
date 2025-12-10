@@ -14,4 +14,4 @@ export default getRequestConfig(async ({ locale }) => {
     messages: (await import(`../../messages/${lng}.json`)).default
   };
 });
-//i18n/request.tsx
+//i18n/reques
