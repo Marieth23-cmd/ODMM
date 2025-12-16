@@ -48,7 +48,7 @@ export default function Contacto(){
         </div>
 
         <div>
-          <label className="text-xs font-semibold text-[#4b504b]"> {c("Form.label1")}</label>
+          <label  className="text-xs font-semibold text-[#4b504b]"> {c("Form.label1")}</label>
           <input required type="text" placeholder="Seu nome"
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>

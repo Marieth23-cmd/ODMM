@@ -40,6 +40,11 @@ useEffect(()=>{
  }
 
 
+ const CloseMenuOpem =()=>{
+  setIsMenuOpen(false)
+  setOpen(false)
+ }
+
 
 
 
@@ -62,7 +67,7 @@ useEffect(()=>{
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300 lg-hidden">
               {h("Contacto")}
             </a>
-            <a href="#eventos" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
+            <a href="#etapas" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
               {h("Etapas")}
             </a>
@@ -83,19 +88,19 @@ useEffect(()=>{
             {isMenuOpen && open && (<div ref={boxeref} className=" lg:hidden absolute top-16 left-0 w-full bg-gray-800 text-white py-4 px-6 shadow-lg">
             <ul className=" flex flex-col gap-5 text-sm ml-auto">
                <a href="#home" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1
-             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300" onClick={scrollTopTop}>
+             after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300" onClick={(e)=>{scrollTopTop(e) ;CloseMenuOpem()}}>
              {h("Inicio")}
             </a>
             <a href="#about" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
-            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
+            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300" onClick={CloseMenuOpem}>
               {h("Sobre")}
             </a>
             <a href="#contact" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
-            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300 lg-hidden">
+            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300 lg-hidden" onClick={CloseMenuOpem}>
               {h("Contacto")}
             </a>
-            <a href="#eventos" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
-            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300">
+            <a href="#etapas" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 
+            after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300" onClick={CloseMenuOpem}>
               {h("Etapas")}
             </a>
             

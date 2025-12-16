@@ -41,7 +41,7 @@ export default function Home() {
     // Cleanup do useEffect
     return () => {
       anchorLinks.forEach((link) => {
-        link.replaceWith(link.cloneNode(true)); // Remove event listeners
+        link.replaceWith(link.cloneNode(true)); 
       });
     };
   }, []);

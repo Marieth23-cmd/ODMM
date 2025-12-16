@@ -18,23 +18,26 @@ const geistMono = localFont({
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params:{ locale: string };
 };
 
-export default async function LocaleLayout({ 
-  children, 
-  params 
-}: Props) {
-  const messages = await getMessages();
-  const { locale } = await params; // ✅ Await params (Next.js 15+)
+ export default async function LocaleLayout({children , params}:Props){
+  
+  const{locale}=params;  
+  console.log("Locale ativo:", locale);
+  const messages= await getMessages({locale})
 
-  return (
+  console.log("Keys carregadas:", Object.keys(messages));
+
+  return(
     <html lang={locale}>
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
+        
       </body>
     </html>
-  );
-}
+  )
+ }
