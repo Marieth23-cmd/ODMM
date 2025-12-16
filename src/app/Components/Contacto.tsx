@@ -43,25 +43,25 @@ export default function Contacto(){
 
         <div>
           <label className="text-xs font-semibold text-[#4b504b]"> {c("Form.label4")}</label>
-          <input required type="text" placeholder="Nome da empresa"
+          <input required type="text" placeholder={c("Form.placeholder1")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
           <label  className="text-xs font-semibold text-[#4b504b]"> {c("Form.label1")}</label>
-          <input required type="text" placeholder="Seu nome"
+          <input required type="text" placeholder={c("Form.placeholder2")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
           <label className="text-xs font-semibold text-[#4b504b]"> {c("Form.label2")}</label>
-          <input required type="email" placeholder="voce@empresa.com"
+          <input required type="email" placeholder={c("Form.placeholder3")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
           <label className="text-xs font-semibold text-[#4b504b]"> {c("Form.label3")}</label>
-          <textarea required rows={4} placeholder="Tipo de evento, público, período, local..."
+          <textarea required rows={4} placeholder={c("Form.placeholder4")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40"></textarea>
         </div>
 

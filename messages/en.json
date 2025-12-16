@@ -73,7 +73,11 @@
       "label1": "Name",
       "label2": "Corporate E-mail",
       "label3": "Event Summary",
-      "label4": "Company"
+      "label4": "Company", 
+       "placeholder1":"Name of Company",
+      "placeholder2":"Your name",
+      "placeholder3":"you@company.com",
+      "placeholder4":"Type of event, audience, period, location..."
     },
     "Button": "Request Contact"
   }

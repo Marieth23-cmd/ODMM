@@ -69,7 +69,11 @@
       "label1": "Nome",
       "label2": "E-mail corporativo",
       "label3": "Resumo do evento",
-      "label4": "Empresa"
+      "label4": "Empresa",
+       "placeholder1":"Nome da Empresa",
+      "placeholder2":"Seu Nome",
+      "placeholder3":"voce@empresa.com",
+      "placeholder4":"Tipo de evento, público, período, local..."
     },
     "Button": "Solicitar Contacto"
   }

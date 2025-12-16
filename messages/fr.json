@@ -70,7 +70,11 @@
       "label1": "Nom",
       "label2": "E-mail professionnel",
       "label3": "Résumé de l'événement",
-      "label4": "Entreprise"
+      "label4": "Entreprise", 
+      "placeholder1":"Nom de l'entreprise",
+      "placeholder2":"Nom",
+      "placeholder3":"email@entreprise.com",
+      "placeholder4":"Type d'événement, public, période, lieu..."
     },
     "Button": "Demander un Contact"
   }
