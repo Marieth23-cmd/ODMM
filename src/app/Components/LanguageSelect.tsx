@@ -12,7 +12,7 @@ export default function LanguageSelect() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
-  const [currentLocale, setCurrentLocale] = useState(serverLocale); // ← Estado local
+  const [currentLocale, setCurrentLocale] = useState(serverLocale); 
 
   const languages = [
     { code: "pt", label: "Português", flag: "https://flagcdn.com/w40/pt.png" },
@@ -44,9 +44,9 @@ const handleLanguageChange = (newLocale: string) => {
   setCurrentLocale(newLocale);
 
   startTransition(() => {
-    const segments = pathname.split('/').filter(Boolean); // ["pt", "pagina"]
+    const segments = pathname.split('/').filter(Boolean); 
     
-    // Substitui o idioma
+   
     if (["pt","en","fr"].includes(segments[0])) {
       segments[0] = newLocale;
     } else {
@@ -55,12 +55,12 @@ const handleLanguageChange = (newLocale: string) => {
 
     const newPath = '/' + segments.join('/');
 
-    router.push(newPath); // ⚡ Isso recarrega a página e carrega o JSON correto
+    router.push(newPath); 
   });
 };
 
 
-  // Fecha dropdown ao clicar fora
+ 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
