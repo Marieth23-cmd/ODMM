@@ -6,10 +6,9 @@ export async function POST(request: Request) {
   console.log("RESEND_API_KEY existe?", !!process.env.RESEND_API_KEY);
   console.log("CONTACT_EMAIL existe?", !!process.env.CONTACT_EMAIL);
   
-  // Verificação explícita
-  const apiKey = process.env.RESEND_API_KEY;
-  const contactEmail = process.env.CONTACT_EMAIL;
-
+  
+  const apiKey = "re_8mSPY5bk_DtywnBsMgXfiYfXvFKTt6a47";
+  const contactEmail = "mariethpascoal7@gmail.com"
   if (!apiKey) {
     console.error("RESEND_API_KEY está undefined/null/empty");
     return NextResponse.json(
