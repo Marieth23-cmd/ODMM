@@ -1,9 +1,36 @@
  import { useTranslations } from "next-intl"
+ import toast from "react-hot-toast";
 
 export default function Contacto(){
      const  c= useTranslations("Contacto")
 
- return(<section
+ const handleSubmit= async(e:React.FormEvent)=>{
+  e.preventDefault();
+  const form= e.currentTarget as HTMLFormElement;
+  const data={
+    company:(form.elements.namedItem("company") as HTMLInputElement).value,
+    name:(form.elements.namedItem("name") as HTMLInputElement).value,
+    email:(form.elements.namedItem("email") as HTMLInputElement).value,
+    message:(form.elements.namedItem("message") as HTMLInputElement).value
+  }
+ const res= await fetch("/api/contact" , {
+  method:"POST" ,
+  headers:{"Content-Type":"aplication/json"},
+  body:JSON.stringify(data)
+ })
+ if(res.ok){
+  toast.success("mensagem enviada com sucesso ")
+  form.reset()
+ }else{
+  toast.error("Erro ao enviar a mensagem")
+ }
+
+ }
+
+
+
+ return(
+ <section
   id="contact"
   className="py-16 px-0 bg-[#f9f9f7] text-[#101211]"
 >
@@ -33,7 +60,7 @@ export default function Contacto(){
     </div>
 
    
-    <form className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] animated-on-scroll delay-md">
+    <form onSubmit={handleSubmit} className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] animated-on-scroll delay-md">
 
       <h3 className="text-lg font-semibold mb-4 text-[#1c1e1b]">
      {c("Form.title")}
@@ -42,26 +69,26 @@ export default function Contacto(){
       <div className="grid grid-cols-1 gap-4">
 
         <div>
-          <label className="text-xs font-semibold text-[#4b504b]"> {c("Form.label4")}</label>
-          <input required type="text" placeholder={c("Form.placeholder1")}
+          <label htmlFor="company" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label4")}</label>
+          <input id="company" name="company" required type="text" placeholder={c("Form.placeholder1")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
-          <label  className="text-xs font-semibold text-[#4b504b]"> {c("Form.label1")}</label>
-          <input required type="text" placeholder={c("Form.placeholder2")}
+          <label htmlFor="name" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label1")}</label>
+          <input id="name" name="name" required type="text" placeholder={c("Form.placeholder2")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
-          <label className="text-xs font-semibold text-[#4b504b]"> {c("Form.label2")}</label>
-          <input required type="email" placeholder={c("Form.placeholder3")}
+          <label htmlFor="email" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label2")}</label>
+          <input id="email" name="email" required type="email" placeholder={c("Form.placeholder3")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
         <div>
-          <label className="text-xs font-semibold text-[#4b504b]"> {c("Form.label3")}</label>
-          <textarea required rows={4} placeholder={c("Form.placeholder4")}
+          <label htmlFor="message" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label3")}</label>
+          <textarea id="message" name="message" required rows={4} placeholder={c("Form.placeholder4")}
             className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40"></textarea>
         </div>
 

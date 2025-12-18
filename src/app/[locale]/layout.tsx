@@ -2,6 +2,8 @@ import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import localFont from "next/font/local";
+import Providers from "./providers";
+
 import "../globals.css";
 
 const geistSans = localFont({
@@ -34,7 +36,10 @@ type Props = {
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <Providers>
+            {children}
+          </Providers>
+          
         </NextIntlClientProvider>
         
       </body>
