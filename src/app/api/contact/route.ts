@@ -49,11 +49,16 @@ export async function POST(request:Request){
     })
     return NextResponse.json({sucess:true})
 
-    }catch(error){
+    }catch(error:any){
+
+        console.error("========== ERRO CAPTURADO ==========");
+    console.error("Tipo do erro:", error.constructor.name);
+    console.error("Mensagem:", error.message);
+    console.error("Status Code:", error.statusCode);
+    console.error("Error completo:", error);
         console.log("Erro ao avaliar contacto", error)
         return NextResponse.json({
-            error:"erro interno ao enviar mensagem"
-        }, 
+            error:"erro interno ao enviar mensagem"}, 
         {status:500})
 
 
