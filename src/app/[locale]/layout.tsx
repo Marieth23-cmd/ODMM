@@ -20,12 +20,12 @@ const geistMono = localFont({
 
 type Props = {
   children: ReactNode;
-  params:{ locale: string };
+  params:Promise<{ locale: string }>;
 };
 
  export default async function LocaleLayout({children , params}:Props){
   
-  const{locale}=params;  
+  const{locale}= await params;  
   console.log("Locale ativo:", locale);
   const messages= await getMessages({locale})
 
