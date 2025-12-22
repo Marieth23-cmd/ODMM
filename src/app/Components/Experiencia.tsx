@@ -27,40 +27,39 @@ export default function Experiencia(){
           <div className="relative z-10 max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1  md:grid-cols-1 gap-6">
         
             <div className="animated-on-scroll">
-              <h2 className="m-0 mb-2 text-lg sm:text-xl md:text-2xl">{E("title")}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">{E("title")}</h2>
               <p className="mt-0 mb-3.5 text-sm sm:text-base md:text-lg  text-gray-300">
                 {E("subtitle")}
               </p>
             </div>
         
-            <div className="grid lg:grid-cols-4 grid-cols-2  sm:items-center md:items-center  gap-3 justify-between animated-on-scroll delay-md sm:gap-4 ">
+           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-4 animated-on-scroll delay-md justify-items-center">
         
-              <div className="py-2 px-2.5 lg:py-3 lg:px-3.5  text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-                <BiTrophy className="mx-auto mb-2 text-2xl lg:text-4xl"/>
-                <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">7</span>
-                <span className="text-xs sm:text-sm md:text-xl"> {E("Victorias")}</span>
+              <div className="flex flex-col items-center justify-center py-4 px-3 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+                <BiTrophy className="mb-1 text-3xl sm:text-3xl lg:text-4xl"/>
+                <span className="block text-2xl sm:text-3xl font-semibold">7</span>
+                <span className="text-xs sm:text-sm md:text-base">{E("Victorias")}</span>
               </div>
         
-              <div className=" py-2 px-2.5 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-28 sm:h-32 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-                <FaBriefcase className="mx-auto mb-2 text-2xl lg:text-4xl"/>
-                <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">50+</span>
-                <span className="text-xs sm:text-sm  md:text-xl">{E("Campeonatos")}</span>
+              <div className="flex flex-col items-center justify-center py-4 px-3 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+                <FaBriefcase className="mb-1 text-3xl sm:text-3xl lg:text-4xl"/>
+                <span className="block text-2xl sm:text-3xl font-semibold">50+</span>
+                <span className="text-xs sm:text-sm md:text-base">{E("Campeonatos")}</span>
               </div>
         
-              <div className="py-2 px-2.5  lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-                <FaUsers className="mx-auto mb-2 text-2xl lg:text-4xl"/>
-                <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">158</span>
-                <span className="text-xs sm:text-sm md:text-xl"> {E("Membros")}</span>
+              <div className="flex flex-col items-center justify-center py-4 px-3 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+                <FaUsers className="mb-1 text-3xl sm:text-3xl lg:text-4xl"/>
+                <span className="block text-2xl sm:text-3xl font-semibold">158</span>
+                <span className="text-xs sm:text-sm md:text-base">{E("Membros")}</span>
               </div>
         
-              <div className="py-2 px-2.5 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full h-36 w-36 sm:w-32 sm:h-28 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
-                <FaBuilding className="mx-auto mb-2 text-2xl lg:text-4xl"/>
-                <span className="block text-2xl  sm:text-3xl md:text-3xl font-semibold">9</span>
-                <span className="text-xs sm:text-sm md:text-xl">{E("Empresas")}</span>
+              <div className="flex flex-col items-center justify-center py-4 px-3 lg:py-3 lg:px-3.5 text-green-600 bg-white rounded-full w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 text-center bg-gradient-to-br from-[rgba(199,160,82,0.1)] to-[rgba(199,160,82,0.02)] border border-[rgba(199,160,82,0.28)]">
+                <FaBuilding className="mb-1 text-3xl sm:text-3xl lg:text-4xl"/>
+                <span className="block text-2xl sm:text-3xl font-semibold">9</span>
+                <span className="text-xs sm:text-sm md:text-base">{E("Empresas")}</span>
               </div>
         
             </div>
-        
           </div>
         </section>
         

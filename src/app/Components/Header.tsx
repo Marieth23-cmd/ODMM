@@ -49,8 +49,8 @@ useEffect(()=>{
 
 
     return (
-        <header className=" fixed left-0 right-0 top-0 z-20 backdrop-blur-lg bg-gradient-to-b from-gray-900/95 via-gray-900/40 to-transparent border-b border-white/10">
-        <div className="max-w-[1100px] mx-auto px-5 py-3 flex items-center gap-3 justify-between">
+        <header className=" fixed left-0 right-0 top-0 z-20 backdrop-blur-lg bg-gradient-to-b from-gray-900/90 via-gray-900/60 to-transparent">
+        <div className="max-w-[1100px] mx-auto px-5 py-2 flex items-center gap-3 justify-between">
           <div className="text-lg font-semibold tracking-widest uppercase text-white">
             <Image src="/images/oddm.png" alt="Logo" width={70} height={60} className=""/>
           </div>
@@ -85,8 +85,9 @@ useEffect(()=>{
        </div>
 
        
-            {isMenuOpen && open && (<div ref={boxeref} className=" lg:hidden absolute top-16 left-0 w-full bg-gray-800 text-white py-4 px-6 shadow-lg">
-            <ul className=" flex flex-col gap-5 text-sm ml-auto">
+            {isMenuOpen && open &&
+             (<div ref={boxeref} className=" lg:hidden absolute top-[85px] left-0 w-full bg-gray-800 text-white py-4 px-6 shadow-lg z-50">
+            <ul className=" flex flex-col gap-5 text-sm">
                <a href="#home" className="text-white/90 no-underline py-1.5 relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1
              after:w-0 after:h-0.5 after:bg-yellow-600 after:transition-all after:duration-300" onClick={(e)=>{scrollTopTop(e) ;CloseMenuOpem()}}>
              {h("Inicio")}

@@ -32,7 +32,7 @@ export default function Contacto(){
  return(
  <section
   id="contact"
-  className="py-16 px-0 bg-[#f9f9f7] text-[#101211]"
+  className="py-16 px-0 bg-[#ffffff] text-[#101211]"
 >
   <div className="max-w-[1100px] mx-auto px-[18px] grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
@@ -48,7 +48,7 @@ export default function Contacto(){
       </p>
 
       {/* Cartão de informações */}
-      <div className="p-5 rounded-xl bg-gradient-to-br from-[#c7a052]/15 to-[#c7a052]/5 border border-[#c7a052]/30 shadow-sm">
+      <div className="p-5 rounded-xl bg-gradient-to-br from-[#c7a052]/2 to-[#c7a052]/2 border border-yellow-600 shadow-sm">
         <h3 className="text-lg font-semibold mb-2 text-[#1a1c18]"> {c("Divs.title")}</h3>
         <ul className="text-gray-700 text-[0.95rem]">
           <li className="mb-2"><strong> {c("Divs.li1")}</strong> geral@mangais-resort.ao</li>
