@@ -1,110 +1,110 @@
- import { useTranslations } from "next-intl"
- import toast from "react-hot-toast";
+import { useTranslations } from "next-intl"
+import toast from "react-hot-toast";
 
-export default function Contacto(){
-     const  c= useTranslations("Contacto")
+export default function Contacto() {
+  const c = useTranslations("Contacto")
 
- const handleSubmit= async(e:React.FormEvent)=>{
-  e.preventDefault();
-  const form= e.currentTarget as HTMLFormElement;
-  const data={
-    company:(form.elements.namedItem("company") as HTMLInputElement).value,
-    name:(form.elements.namedItem("name") as HTMLInputElement).value,
-    email:(form.elements.namedItem("email") as HTMLInputElement).value,
-    message:(form.elements.namedItem("message") as HTMLInputElement).value
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const form = e.currentTarget as HTMLFormElement;
+    const data = {
+      company: (form.elements.namedItem("company") as HTMLInputElement).value,
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLInputElement).value
+    }
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "aplication/json" },
+      body: JSON.stringify(data)
+    })
+    if (res.ok) {
+      toast.success("mensagem enviada com sucesso ")
+      form.reset()
+    } else {
+      toast.error("Erro ao enviar a mensagem")
+    }
+
   }
- const res= await fetch("/api/contact" , {
-  method:"POST" ,
-  headers:{"Content-Type":"aplication/json"},
-  body:JSON.stringify(data)
- })
- if(res.ok){
-  toast.success("mensagem enviada com sucesso ")
-  form.reset()
- }else{
-  toast.error("Erro ao enviar a mensagem")
- }
-
- }
 
 
 
- return(
- <section
-  id="contact"
-  className="py-16 px-0 bg-[#ffffff] text-[#101211]"
->
-  <div className="max-w-[1100px] mx-auto px-[18px] grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+  return (
+    <section
+      id="contact"
+      className="py-16 px-0 bg-[#ffffff] text-[#101211]"
+    >
+      <div className="max-w-[1100px] mx-auto px-[18px] grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-    
-    <div className="animated-on-scroll">
 
-      <h2 className="text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.9rem]  font-semibold mb-3 text-[#1a1c18]">
-       {c("title")}
-      </h2>
+        <div className="animated-on-scroll">
 
-      <p className="text-gray-600 max-w-[520px] leading-relaxed mb-6">
-       {c("subtitle")}
-      </p>
+          <h2 className="text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.9rem]  font-semibold mb-3 text-[#1a1c18]">
+            {c("title")}
+          </h2>
 
-      {/* Cartão de informações xvzasvbhszvcx<gacahvxzacxav<vzczsx*/}
-      <div className="p-5 rounded-xl bg-gradient-to-br from-[#c7a052]/2 to-[#c7a052]/2 border border-yellow-600 shadow-sm">
-        <h3 className="text-lg font-semibold mb-2 text-[#1a1c18]"> {c("Divs.title")}</h3>
-        <ul className="text-gray-700 text-[0.95rem]">
-          <li className="mb-2"><strong> {c("Divs.li1")}</strong> geral@mangais-resort.ao</li>
-          <li className="mb-2"><strong> {c("Divs.li2")}</strong> 244 926 073 970</li>
-          <li><strong> {c("Divs.subli.localizacao")}</strong>{c("Divs.subli.descricao")}</li>
-        </ul>
-      </div>
+          <p className="text-gray-600 max-w-[520px] leading-relaxed mb-6">
+            {c("subtitle")}
+          </p>
 
-    </div>
-   
-    <form onSubmit={handleSubmit} className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] animated-on-scroll delay-md">
+          {/* Cartão de informações xvzasvbhszvcx<gacahvxzacxav<vzczsx*/}
+          <div className="p-5 rounded-xl bg-gradient-to-br from-[#c7a052]/2 to-[#c7a052]/2 border border-yellow-600 shadow-sm">
+            <h3 className="text-lg font-semibold mb-2 text-[#1a1c18]"> {c("Divs.title")}</h3>
+            <ul className="text-gray-700 text-[0.95rem]">
+              <li className="mb-2"><strong> {c("Divs.li1")}</strong> geral@mangais-resort.ao</li>
+              <li className="mb-2"><strong> {c("Divs.li2")}</strong> 244 926 073 970</li>
+              <li><strong> {c("Divs.subli.localizacao")}</strong>{c("Divs.subli.descricao")}</li>
+            </ul>
+          </div>
 
-      <h3 className="text-lg font-semibold mb-4 text-[#1c1e1b]">
-     {c("Form.title")}
-      </h3>
-
-      <div className="grid grid-cols-1 gap-4">
-
-        <div>
-          <label htmlFor="company" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label4")}</label>
-          <input id="company" name="company" required type="text" placeholder={c("Form.placeholder1")}
-            className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
         </div>
 
-        <div>
-          <label htmlFor="name" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label1")}</label>
-          <input id="name" name="name" required type="text" placeholder={c("Form.placeholder2")}
-            className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
-        </div>
+        <form onSubmit={handleSubmit} className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] animated-on-scroll delay-md">
 
-        <div>
-          <label htmlFor="email" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label2")}</label>
-          <input id="email" name="email" required type="email" placeholder={c("Form.placeholder3")}
-            className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
-        </div>
+          <h3 className="text-lg font-semibold mb-4 text-[#1c1e1b]">
+            {c("Form.title")}
+          </h3>
 
-        <div>
-          <label htmlFor="message" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label3")}</label>
-          <textarea id="message" name="message" required rows={4} placeholder={c("Form.placeholder4")}
-            className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40"></textarea>
-        </div>
+          <div className="grid grid-cols-1 gap-4">
+
+            <div>
+              <label htmlFor="company" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label4")}</label>
+              <input id="company" name="company" required type="text" placeholder={c("Form.placeholder1")}
+                className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
+            </div>
+
+            <div>
+              <label htmlFor="name" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label1")}</label>
+              <input id="name" name="name" required type="text" placeholder={c("Form.placeholder2")}
+                className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label2")}</label>
+              <input id="email" name="email" required type="email" placeholder={c("Form.placeholder3")}
+                className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40" />
+            </div>
+
+            <div>
+              <label htmlFor="message" className="text-xs font-semibold text-[#4b504b]"> {c("Form.label3")}</label>
+              <textarea id="message" name="message" required rows={4} placeholder={c("Form.placeholder4")}
+                className="mt-1 w-full rounded-lg border border-gray-300/60 py-2 px-3 text-sm outline-none transition focus:border-[#c7a052] focus:ring-1 focus:ring-[#c7a052]/40"></textarea>
+            </div>
+
+          </div>
+
+          <button
+            type="submit"
+            className="w-full mt-4 py-3 px-5 bg-yellow-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:bg-yellow-700 active:scale-[0.98]"
+          >
+            {c("Button")}
+          </button>
+
+        </form>
 
       </div>
-
-      <button
-    type="submit"
-    className="w-full mt-4 py-3 px-5 bg-yellow-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:bg-yellow-700 active:scale-[0.98]"
-  >
-    {c("Button")}
-  </button>
-
-    </form>
-
-  </div>
-</section>
-)   
+    </section>
+  )
 
 
 
