@@ -8,7 +8,7 @@ export default function ODMMImage() {
            
                  <div className="max-w-[1100px] mx-auto px-5 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden">
                 <Image
                   width={300}
                   height={220}
@@ -22,7 +22,7 @@ export default function ODMMImage() {
 
 
               <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -36,7 +36,7 @@ export default function ODMMImage() {
             </article>
 
             <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -49,7 +49,7 @@ export default function ODMMImage() {
               
             </article>
              <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -63,7 +63,7 @@ export default function ODMMImage() {
             </article>
 
              <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+                <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -80,7 +80,7 @@ export default function ODMMImage() {
             
 
                 <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -94,7 +94,7 @@ export default function ODMMImage() {
             </article>
 
               <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -109,7 +109,7 @@ export default function ODMMImage() {
             </article>
 
               <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -122,7 +122,7 @@ export default function ODMMImage() {
               
             </article>
               <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -135,22 +135,10 @@ export default function ODMMImage() {
               
             </article>
 
-              <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
-                <Image
-                  width={300}
-                  height={220}
-                  src="/images/ft10.jpg"
-                  alt="Jogador de golf em campo"
-                  loading="lazy"
-                  className="filter grayscale hover:grayscale-0 w-full h-full object-cover block scale-[1.02] hover:scale-[1.08] transition-transform duration-1000 ease-in-out"
-                />
-              </div>
               
-            </article>
 
               <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -164,7 +152,7 @@ export default function ODMMImage() {
             </article>
 
              <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -180,7 +168,7 @@ export default function ODMMImage() {
 
 
              <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
@@ -194,21 +182,7 @@ export default function ODMMImage() {
             </article>
 
  <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
-                <Image
-                  width={300}
-                  height={220}
-                  src="/images/ft14.jpg"
-                  alt="Jogador de golf em campo"
-                  loading="lazy"
-                  className="filter grayscale hover:grayscale-0 w-full h-full object-cover block scale-[1.02] hover:scale-[1.08] transition-transform duration-1000 ease-in-out"
-                />
-              </div>
-              
-            </article>
-
- <article className=" grid grid-cols-1 gap-3 bg-white rounded-[16px] shadow-[0_12px_30px_rgba(0,_0,_0,_0.16)] overflow-hidden animated-on-scroll">
-              <div className=" relative h-[200px] sm:h-[260px] md:h-[220px] lg:h-[240px] overflow-hidden ">
+              <div className=" relative h-[240px] sm:h-[280px] md:h-[260px] lg:h-[300px] overflow-hidden ">
                 <Image
                   width={300}
                   height={220}
