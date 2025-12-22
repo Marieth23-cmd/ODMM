@@ -47,7 +47,7 @@ export default function Contacto(){
        {c("subtitle")}
       </p>
 
-      {/* Cartão de informações */}
+      {/* Cartão de informações xvzasvbhszvcx<gacahvxzacxav<vzczsx*/}
       <div className="p-5 rounded-xl bg-gradient-to-br from-[#c7a052]/2 to-[#c7a052]/2 border border-yellow-600 shadow-sm">
         <h3 className="text-lg font-semibold mb-2 text-[#1a1c18]"> {c("Divs.title")}</h3>
         <ul className="text-gray-700 text-[0.95rem]">
@@ -58,7 +58,6 @@ export default function Contacto(){
       </div>
 
     </div>
-
    
     <form onSubmit={handleSubmit} className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] animated-on-scroll delay-md">
 
