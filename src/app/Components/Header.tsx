@@ -49,7 +49,7 @@ useEffect(()=>{
 
 
     return (
-        <header className=" fixed left-0 right-0 top-0 z-20 backdrop-blur-lg bg-gradient-to-b from-gray-900/90 via-gray-900/60 to-transparent">
+        <header className=" fixed left-0 right-0 top-0 z-20 backdrop-blur-lg bg-gradient-to-b from-gray-600/90 via-gray-700/60 to-transparent">
         <div className="max-w-[1100px] mx-auto px-5 py-2 flex items-center gap-3 justify-between">
           <div className="text-lg font-semibold tracking-widest uppercase text-white">
             <Image src="/images/oddm.png" alt="Logo" width={70} height={60} className=""/>
