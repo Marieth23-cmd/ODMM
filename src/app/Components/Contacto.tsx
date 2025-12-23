@@ -53,7 +53,7 @@ export default function Contacto() {
             <ul className="text-gray-700 text-[0.95rem]">
               <li className="mb-2"><strong> {c("Divs.li1")}</strong> geral@mangais-resort.ao</li>
               <li className="mb-2"><strong> {c("Divs.li2")}</strong> 244 926 073 970</li>
-              <li><strong> {c("Divs.subli.localizacao")}</strong>{c("Divs.subli.descricao")}</li>
+              <li><strong> {c("Divs.subli.localizacao")}: </strong>{c("Divs.subli.descricao")}</li>
             </ul>
           </div>
 
